@@ -6,11 +6,11 @@ const CareerDetail = () => {
     const career = useLoaderData()
   return (
     <div className="mt-8">
-        <h1 className="text-white text-2xl font-semibold mb-3"> Career details for {career.title}</h1>
-        <p className="text-white text-xl mb-3">Starting salary : {career.salary}</p>
-        <p className="text-white text-xl mb-3 ">Location : {career.location}</p>
+        <h1 className="text-red-500 dark:text-green-500 text-2xl font-semibold mb-3"> Career details for {career.title}</h1>
+        <p className="text-red-500 dark:text-green-500 text-xl mb-3">Starting salary : {career.salary}</p>
+        <p className="text-red-500 dark:text-green-500 text-xl mb-3 ">Location : {career.location}</p>
         <div>
-          <p className="text-white text-xl mb-3 ">
+          <p className="text-red-500 dark:text-green-500 text-xl mb-3 ">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio unde enim obcaecati ut minus maiores, consequuntur exp
             licabo voluptatibus consectetur omnis autem est repellendus, officiis pariatur nobis, exercitationem ducimus nihil porro.
           </p>

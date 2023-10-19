@@ -4,7 +4,7 @@ const HelpLayout = () => {
   return (
 
     <div className="mt-8 mx-8"> 
-        <div className='text-white'>
+        <div className='text-red-500 dark:text-green-500'>
             <div className="mb-8">
             <h1 className="text-3xl font-serif font-bold">Website Help</h1>
             </div>
@@ -18,13 +18,13 @@ const HelpLayout = () => {
             </div>
        
         </div>
-        <nav className="mt-12 text-center text-xl space-x-9 text-white">
+        <nav className="mt-12 text-center text-xl space-x-9 text-black dark:text-white">
 
 
             <NavLink to='faq' className={({ isActive }) => 
-          isActive ?"p-2 bg-red-500 rounded-md outline outline-white  outline-2" : "p-2 rounded-md outline outline-red-500  outline-2"}>View the FAQ</NavLink>
+          isActive ?"p-2 bg-red-500 rounded-md outline outline-white  outline-2 dark:bg-green-500" : "p-2 rounded-md outline outline-red-500 dark:outline-green-500 outline-2"}>View the FAQ</NavLink>
             <NavLink to='contact'className={({ isActive }) => 
-          isActive ?"p-2 bg-red-500 rounded-md  outline outline-white  outline-2" : "p-2 rounded-md outline outline-red-500  outline-2"}
+          isActive ?"p-2 bg-red-500 rounded-md  outline outline-white dark:bg-green-500  outline-2" : "p-2 rounded-md outline outline-red-500 dark:outline-green-500  outline-2"}
             >Contact us</NavLink>
 
         </nav>

@@ -12,7 +12,7 @@ const Breadcrumb = () => {
 
         return(
             <div className=" flex" key={crumb}>
-                <Link className="mx-3 text-white mt-3 flex underline" to={currentLink}>
+                <Link className="mx-3 text-red-500 dark:text-green-500 mt-3 flex underline" to={currentLink}>
                     {crumb}
                     
                 </Link>

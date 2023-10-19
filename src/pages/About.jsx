@@ -4,11 +4,11 @@ const About = () => {
   return (
     <div className='ml-8'>
         <div className=' mt-8 mb-10'>
-        <h1 className='text-white text-3xl font-serif font-bold' >About</h1>
+        <h1 className='text-red-500 dark:text-green-500 text-3xl font-serif font-bold' >About</h1>
         </div>
 
 
-        <div className='text-white space-y-4 tracking-wide m'>
+        <div className='text-red-500 dark:text-green-500 space-y-4 tracking-wide m'>
         <p >             
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus labore, maiores id laborum explicabo, 
             libero consequuntur soluta magnam ullam enim earum, vitae iste? Alias excepturi aliquid inventore nulla. 

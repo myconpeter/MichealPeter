@@ -13,8 +13,8 @@ const Contact = () => {
 <div className='fw-full '>
 
 <div className='flex flex-col  my-3' >
-<label className='block text-start text-white font-bold '>Email : </label>
-<input className='w-full px-5 py-4 mx-0 my-4 border-white border-1 box-border block'
+<label className='block text-start text-red-500 dark:text-green-500 font-bold '>Email : </label>
+<input className='w-full px-5 py-4 mx-0 my-4 bg-red-500 dark:bg-green-500 border-1 box-border block'
 type="email"
 name="email" 
 required
@@ -23,8 +23,8 @@ required
 </div>
 
 <div className='flex flex-col  my-3' >
-<label className='block text-start text-white font-bold '>Message : </label>
-<textarea className='w-full px-5 py-4 mx-0 my-4 border-white border-1 box-border block'
+<label className='block text-start text-red-500 dark:text-green-500 font-bold '>Message : </label>
+<textarea className='w-full px-5 py-4 mx-0 my-4 bg-red-500 dark:bg-green-500 border-1 box-border block'
 type="text"
 name="message" 
 
@@ -35,7 +35,7 @@ required
 </div>
 
 <div className='text-center'>
-<button className='p-2 bg-red-500 rounded-lg text-white' >Submit</button>
+<button className='p-2 bg-red-500 dark:bg-green-500 rounded-lg text-white' >Submit</button>
 
 </div>
 {data && data.error && <p className="text-white">{data.error}</p>}

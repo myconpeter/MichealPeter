@@ -7,11 +7,11 @@ const Career = () => {
   return (
     <div className='mt-8'>
         {careers.map(career =>(
-          <div className="p-3  bg-purple-700 rounded-lg my-4">
+          <div className="p-3  bg-purple-300 dark:bg-gray-700 rounded-lg my-4">
             <Link to={ career.id.toString()} key={career.id}>
               
-            <p className="text-white text-xl space-x-4 hover:text-rose-500">{career.title}</p>
-            <p className="text-white text-md space-x-4">Based in : {career.location}</p>
+            <p className="text-red-500 dark:text-green-500 text-xl space-x-4 hover:text-rose-500">{career.title}</p>
+            <p className="text-red-500 dark:text-green-500 text-md space-x-4">Based in : {career.location}</p>
             
           </Link>
           </div>
