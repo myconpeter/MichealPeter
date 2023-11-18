@@ -1,58 +1,120 @@
-import About from "./pages/About";
-import Home from "./pages/Home";
-import NavBar from "./layouts/NavBar";
-import Faq from "./pages/help/faq";
-import HelpLayout from "./layouts/HelpLayout";
-import Contact, { contactAction } from "./pages/help/Contact";
-import Error404 from "./pages/help/Error404";
-import Careers from "./layouts/Careers";
-import Career, { careerLoader } from "./pages/careers/Career";
-import CareerDetail, { careerDetailLoader } from "./pages/careers/CareerDetails";
-import CareerError from "./pages/careers/CareerError";
 
-import {
-createBrowserRouter,
-createRoutesFromElements,
-Route,
-RouterProvider
-} from "react-router-dom";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Experience from "./components/Experience";
+import Footer from "./components/Footer";
+import Home from "./components/Home";
+import Navbar from "./components/Navbar";
+import Personal from "./components/Personal";
+import Portfolio from "./components/Portfolio";
+import SocialLinks from "./components/SocialLinks";
+import SocialSmall from "./components/SocialSmall";
 
-
-
-const Router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/" element = {< NavBar />} >
-        <Route index element= {<Home /> } />
-       <Route path="about" element = { < About />} />
-       <Route path="help" element ={<HelpLayout/>}>
-        < Route path="contact" element = {<Contact />} action={contactAction} />
-        < Route path="faq"  element = {<Faq />}  />
-       </Route>
-
-       <Route path="careers" element = {<Careers />} errorElement= {<CareerError />}>
-        <Route 
-        index 
-        element = {<Career />}
-        loader={careerLoader}
-        />
-
-        <Route path=":id" element = {<CareerDetail />} 
-        loader={careerDetailLoader}
-        
-        />
-       </Route>
-
-       < Route path="*" element = {<Error404 />} />
-    </Route>
-  )
-)
 
 function App() {
+  const links = [
+    {
+      id: 1,
+      child: (
+        <>
+          LinkedIn
+          <span className='mr-3'>
+            L
+          </span>
+
+        </>
+      ),
+      href: 'https://linkedin.com/in/micheal-peter-b342b2249'
+    },
+    {
+      id: 2,
+      child: (
+        <>
+          Mail
+          <span className='mr-3'>
+            M
+          </span>
+
+        </>
+      ),
+      href: 'mailto:michealpeter040@gmail.com'
+    },
+    {
+      id: 3,
+      child: (
+        <>
+          Github
+          <span className='mr-3'>
+            G
+          </span>
+
+        </>
+      ),
+      href: 'https://github.com/myconpeter'
+    },
+    {
+      id: 4,
+      child: (
+        <>
+          Stack
+          <span className='mr-3'>
+            S
+          </span>
+
+        </>
+      ),
+      href: 'https://stackoverflow.com/users/15232295/mycon'
+    },
+
+    {
+      id: 5,
+      child: (
+        <>
+          X
+          <span className='mr-3'>
+            X
+          </span>
+
+        </>
+      ),
+      href: 'https://twitter.com/GreatmyconPeter',
+      download: true
+    },
+    {
+      id: 6,
+      child: (
+        <>
+          Resume
+          <span className='mr-3'>
+            S
+          </span>
+
+        </>
+      ),
+      href: '/MichealpeterResume.pdf',
+      download: true
+    },
+  ]
   return (
-    <div>
-      <RouterProvider router={ Router} />
+    <div className="dark:bg-black">
+
+
+      <Navbar />
+      <Home />
+      <SocialLinks links={links} />
+      <About />
+      <Portfolio />
+      <Experience />
+      <Personal />
+
+      <Contact />
+      <SocialSmall />
+
+      <Footer />
+
     </div>
   );
 }
+
 
 export default App;

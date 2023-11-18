@@ -5,11 +5,11 @@
 
 
 @layer base {
-  body{
+  body {
     @apply bg-white
-    
   }
-  .dark{
+
+  .dark {
     @apply bg-black
   }
 }
