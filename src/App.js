@@ -5,10 +5,15 @@ import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
-import Personal from "./components/Personal";
+// import Personal from "./components/Personal";
 import Portfolio from "./components/Portfolio";
 import SocialLinks from "./components/SocialLinks";
 import SocialSmall from "./components/SocialSmall";
+
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import { BsFillPersonLinesFill } from "react-icons/bs";
+import { FaXTwitter } from "react-icons/fa6"
 
 
 function App() {
@@ -19,7 +24,7 @@ function App() {
         <>
           LinkedIn
           <span className='mr-3'>
-            L
+            <FaLinkedin />
           </span>
 
         </>
@@ -32,7 +37,7 @@ function App() {
         <>
           Mail
           <span className='mr-3'>
-            M
+            <HiOutlineMail />
           </span>
 
         </>
@@ -45,26 +50,14 @@ function App() {
         <>
           Github
           <span className='mr-3'>
-            G
+            <FaGithub />
           </span>
 
         </>
       ),
       href: 'https://github.com/myconpeter'
     },
-    {
-      id: 4,
-      child: (
-        <>
-          Stack
-          <span className='mr-3'>
-            S
-          </span>
 
-        </>
-      ),
-      href: 'https://stackoverflow.com/users/15232295/mycon'
-    },
 
     {
       id: 5,
@@ -72,7 +65,7 @@ function App() {
         <>
           X
           <span className='mr-3'>
-            X
+            <FaXTwitter />
           </span>
 
         </>
@@ -86,7 +79,7 @@ function App() {
         <>
           Resume
           <span className='mr-3'>
-            S
+            <BsFillPersonLinesFill />
           </span>
 
         </>
@@ -105,7 +98,7 @@ function App() {
       <About />
       <Portfolio />
       <Experience />
-      <Personal />
+      {/* <Personal /> */}
 
       <Contact />
       <SocialSmall />

@@ -1,9 +1,11 @@
 import React from 'react'
 import image from "../assets/image.jpg"
+import { MdOutlineKeyboardArrowRight } from "react-icons/md"
+import { Link } from "react-scroll"
 
 const Home = () => {
     return (
-        <div name="home" className='h-full w-full bg-white text-black pt-20 lg:h-screen dark:bg-black dark:text-white '>
+        <div name="Home" className='h-full w-full bg-white text-black pt-20 lg:h-screen dark:bg-black dark:text-white '>
             <div className=' flex flex-col items-center justify-center lg:flex-row  mx-auto  h-full px-4'>
                 {/* bg-gradient-to-b from-black to-gray-800 */}
                 <div className=''>
@@ -18,12 +20,12 @@ const Home = () => {
                         from concept through to development and deliveries. Consistency recognized as a hands-on and competent leader, skilled at coordinating
                         cross-functional team in a fast-paced, deadline-driven environment to steer timely project completion within budgetary constraints.</p>
                     <div>
-                        <button className='group text-white items-center px-3 bg-blue-500 p-2 rounded-lg flex cursor-pointer'>Portfolio
+                        <Link to='Portfolio' smooth duration={500} className='group text-white items-center px-3 bg-blue-500 p-2 rounded-lg flex cursor-pointer w-fit'>Portfolio
                             <span className='group-hover:rotate-90 text-white mx-2   duration-300'>
-                                T
+                                <MdOutlineKeyboardArrowRight />
                             </span>
 
-                        </button>
+                        </Link>
 
                     </div>
                 </div>

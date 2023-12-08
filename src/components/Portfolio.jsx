@@ -1,19 +1,26 @@
-import React from 'react'
-import Micheal from '../assets/Micheal.jpg'
+import Admin from '../assets/admin.jpg';
+import fundLab from '../assets/fundLab.jpg'
+import zim from '../assets/zinenergy.jpg'
 
 const Portfolio = () => {
     const Portfolios = [
         {
             id: 1,
-            src: Micheal
+            src: zim,
+            hrefDemo: 'https://zim-energy.onrender.com',
+            hrefCode: 'https://github.com/myconpeter/zim-energy'
         },
         {
             id: 2,
-            src: Micheal
+            src: Admin,
+            hrefDemo: 'https://zim-energy-admin.onrender.com',
+            hrefCode: 'https://github.com/myconpeter/zim-energy-Admin'
         },
         {
             id: 3,
-            src: Micheal
+            src: fundLab,
+            hrefDemo: 'https://fund-lab.onrender.com',
+            hrefCode: 'https://github.com/myconpeter/fundlabuser'
         }
 
 
@@ -29,12 +36,17 @@ const Portfolio = () => {
 
 
                 <div className='grid  px-auto gap-8 sm:px-0 grid-cols-1 sm:grid-cols-2 md:grid-cols-3'>
-                    {Portfolios.map(({ id, src }) => (
+                    {Portfolios.map(({ id, src, hrefDemo, hrefCode }) => (
                         <div key={id} className='shadow-lg shadow-gray-400 rounded-lg'>
                             <img className='rounded-lg hover:scale-105 duration-300' src={src} alt="Micheal" />
                             <div className='flex items-center justify-center'>
-                                <button className='w-1/2 px-6 py-2 m-4 duration-200 hover:scale-105 text-black dark:text-white'>Demo</button>
-                                <button className='w-1/2 px-6 py-2 m-4 duration-200 hover:scale-105 text-black dark:text-white'>Code</button>
+                                <a href={hrefDemo} target="_blank" rel="noopener noreferrer">
+                                    <button className='w-1/2 px-6 py-2 m-4 duration-200 hover:scale-105 text-black dark:text-white'>Demo</button>
+                                </a>
+
+                                <a href={hrefCode} target="_blank" rel="noopener noreferrer">
+                                    <button className='w-1/2 px-6 py-2 m-4 duration-200 hover:scale-105 text-black dark:text-white'>Code</button>
+                                </a>
 
                             </div>
                         </div>

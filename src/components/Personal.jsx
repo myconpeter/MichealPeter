@@ -5,7 +5,7 @@ const Personal = () => {
         {
             id: 1,
             src: Micheal,
-            title: 'Job-router',
+            title: 'Dojo-App',
             style: 'shadow-red-500',
             link: 'www.google.com',
             code: 'www.github.com'

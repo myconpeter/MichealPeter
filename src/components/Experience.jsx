@@ -168,7 +168,7 @@ const Experience = () => {
 
     ]
     return (
-        <div name='Portfolio' className='bg-white text-black  mt-12 dark:text-white dark:bg-black'>
+        <div name='Skills' className='bg-white text-black  mt-12 dark:text-white dark:bg-black'>
             <div className='p-4 max-w-screen-lg mx-auto flex flex-col justify-center w-full h-full'>
                 <div className='pb-8'>
                     <p className='capitalize text-3xl font-bold  hover:border-b-4  hover:border-gray-500 inline duration-300'>

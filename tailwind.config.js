@@ -6,6 +6,9 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {},
+    fontFamily: {
+      signature: ["Great Vibes"]
+    }
   },
   plugins: [],
 }
