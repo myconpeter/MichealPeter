@@ -12,20 +12,26 @@ const Home = () => {
 				{/* bg-gradient-to-b from-black to-gray-800 */}
 				<div className=''>
 					<h2 className='text-4xl font-bold   max-w-md py-4 italic'>
-						I'm a Software Engineer
+						Software Engineer & Technical Project Lead
 					</h2>
 					<p className='  text-left py-4 max-w-md '>
-						Software Engineer with more than half a decade experience in creating and
-						executing innovative software solutions to enhance business productivity.
+						Full-Stack Software Engineer & Project Lead, experienced in building and
+						managing modern web applications and automation systems. I specialize in
+						TypeScript, JavaScript, Node.js, React, NextJs and MongoDB, postgresql with
+						a proven ability to ship high-quality software from concept to deployment.
 					</p>
 
 					<p className='  text-left py-4 max-w-md'>
-						Highly experience in all aspect of the software development lifecycle and
-						end-to-end project management, from concept through to development and
-						deliveries. Consistency recognized as a hands-on and competent leader,
-						skilled at coordinating cross-functional team in a fast-paced,
-						deadline-driven environment to steer timely project completion within
-						budgetary constraints.
+						I led the development of the Arctic Telegram Bot and Web App — overseeing
+						frontend, backend, and API integrations — while ensuring security,
+						performance, and real-world usability. This hands-on leadership role
+						sharpened my ability to manage features, timelines, and technical direction
+						across the full stack.
+					</p>
+					<p className='  text-left py-4 max-w-md'>
+						Whether I’m designing clean user interfaces or building secure, scalable
+						backend systems, I bring strong technical skills and a builder’s mindset to
+						every project — from the first line of code to final delivery.
 					</p>
 					<div className='flex flex-row'>
 						<Link
