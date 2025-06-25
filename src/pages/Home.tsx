@@ -83,10 +83,12 @@ function HomePage() {
 					</span>
 				</>
 			),
-			href: '/MichealpeterResume.pdf',
+			href: '',
 			download: true,
 		},
 	];
+
+	// /MichealpeterResume.pdf
 	return (
 		<div className='dark:bg-black'>
 			<Navbar />

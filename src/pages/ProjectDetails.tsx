@@ -1,56 +1,13 @@
-// ProjectDetails.tsx
-import { useParams } from 'react-router';
-import zim from '../assets/zinenergy.jpg';
-import Admin from '../assets/admin.jpg';
-import fundLab from '../assets/fundLab.jpg';
-import { useNavigate } from 'react-router';
+import { useParams, useNavigate } from 'react-router';
 import { FaArrowLeft } from 'react-icons/fa';
 import { useEffect } from 'react';
-
-const projectData = {
-	'zim-energy': {
-		title: 'Zim Energy Website',
-		stack: ['React', 'TypeScript', 'TailwindCSS', 'Node.js'],
-		description:
-			'A responsive website for Zim Energy to showcase their renewable solutions and capture leads.',
-		challenges:
-			'Adapting the design to different screen sizes while optimizing loading speed and SEO.',
-		learnings:
-			'Deepened understanding of responsive design patterns, lazy loading, and SEO-friendly React rendering.',
-		github: 'https://github.com/myconpeter/zim-energy',
-		demo: 'https://zim-energy.onrender.com',
-		image: zim,
-	},
-	'zim-energy-admin': {
-		title: 'Zim Admin Dashboard',
-		stack: ['React', 'TypeScript', 'Chart.js', 'TailwindCSS'],
-		description: 'An admin dashboard for monitoring Zim Energy users and site activity.',
-		challenges:
-			'Dynamic data rendering and managing complex state across charts and components.',
-		learnings:
-			'Improved state management using hooks and integrating third-party chart libraries.',
-		github: 'https://github.com/myconpeter/zim-energy-Admin',
-		demo: 'https://zim-energy-admin.onrender.com',
-		image: Admin,
-	},
-	fundlab: {
-		title: 'FundLab Platform',
-		stack: ['React', 'TypeScript', 'Express.js', 'MongoDB'],
-		description:
-			'A donation platform allowing users to create and manage fundraising campaigns.',
-		challenges: 'Ensuring secure user authentication and handling real-time updates.',
-		learnings: 'Applied token-based auth with role separation and optimized API interactions.',
-		github: 'https://github.com/myconpeter/fundlabuser',
-		demo: 'https://fund-lab.onrender.com',
-		image: fundLab,
-	},
-};
+import { projects } from '../data/project';
 
 const ProjectDetails = () => {
 	const navigate = useNavigate();
-
 	const { slug } = useParams();
-	const project = projectData[slug as keyof typeof projectData];
+	const project = projects.find((p) => p.slug === slug);
+
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
@@ -82,7 +39,7 @@ const ProjectDetails = () => {
 					<img
 						src={project.image}
 						alt={project.title}
-						className=''
+						className='object-cover w-full h-full'
 					/>
 				</div>
 
@@ -117,6 +74,13 @@ const ProjectDetails = () => {
 						<p className='text-gray-400 leading-relaxed'>{project.learnings}</p>
 					</div>
 				</div>
+
+				{project.impact && (
+					<div>
+						<h3 className='text-xl font-semibold text-green-400 mb-2'>📈 Impact</h3>
+						<p className='text-gray-300 italic'>{project.impact}</p>
+					</div>
+				)}
 
 				<div className='flex flex-wrap gap-4 justify-center md:justify-start'>
 					<a

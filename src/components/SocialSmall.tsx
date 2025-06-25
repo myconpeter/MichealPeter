@@ -14,7 +14,7 @@ const SocialSmall = () => {
 					</span>
 				</>
 			),
-			href: 'https://linkedin.com/in/micheal-peter-b342b2249',
+			href: 'https://www.linkedin.com/in/micheal-peter-bb534a370',
 		},
 		{
 			id: 2,

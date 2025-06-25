@@ -48,8 +48,8 @@ const Home = () => {
 						<div className='group text-white items-center px-3 bg-blue-500 rounded-lg flex cursor-pointer w-fit ml-4'>
 							<a
 								className='group text-white items-center px-3 bg-blue-500  rounded-lg flex cursor-pointer w-fit'
-								href='/MichealpeterResume.pdf'
-								download={true}
+								// href='/MichealpeterResume.pdf'
+								// download={true}
 								target='_blank'
 								rel='noreferrer'>
 								Resume

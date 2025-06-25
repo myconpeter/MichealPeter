@@ -7,7 +7,12 @@ const Experience = () => {
 		},
 		{
 			id: 2,
-			title: 'OOP',
+			title: 'TypeScript',
+			style: 'border-red-500',
+		},
+		{
+			id: 2,
+			title: 'Agile & Scrum',
 			style: 'border-red-500',
 		},
 		{
@@ -33,7 +38,7 @@ const Experience = () => {
 		},
 		{
 			id: 7,
-			title: 'My Sql',
+			title: 'PostgreSQL',
 			style: 'border-gray-500',
 		},
 		{
@@ -79,7 +84,7 @@ const Experience = () => {
 		},
 		{
 			id: 16,
-			title: 'Chat GPT',
+			title: 'Open AI',
 			style: 'border-red-900',
 		},
 		{
@@ -92,11 +97,7 @@ const Experience = () => {
 			title: 'LINUX',
 			style: 'border-red-300',
 		},
-		{
-			id: 19,
-			title: 'UNIX',
-			style: 'border-green-900',
-		},
+
 		{
 			id: 20,
 			title: 'AWS',
@@ -112,26 +113,13 @@ const Experience = () => {
 			title: 'Github',
 			style: 'border-red-600',
 		},
-		{
-			id: 23,
-			title: 'Java',
-			style: 'border-blue-400',
-		},
+
 		{
 			id: 24,
 			title: 'TypeScript',
 			style: 'border-brown-500',
 		},
-		{
-			id: 25,
-			title: 'React Native',
-			style: 'border-cyan-500',
-		},
-		{
-			id: 26,
-			title: 'Flutter',
-			style: 'border-black',
-		},
+
 		{
 			id: 27,
 			title: 'HTML',
@@ -160,6 +148,11 @@ const Experience = () => {
 		{
 			id: 33,
 			title: 'Semantic UI',
+			style: 'border-orange-700',
+		},
+		{
+			id: 34,
+			title: 'OOP',
 			style: 'border-orange-700',
 		},
 	];
